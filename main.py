@@ -1,5 +1,19 @@
-def add(a, b):
-    return a + b
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def home():
+    return {"message": "Hello from my FastAPI application!"}
 
 
-print("Hello from my Python project!")
+@app.get("/health")
+def health_check():
+    return {"status": "healthy"}
+
+
+# def add(a, b):
+#     return a + b
+
+
+# print("Hello from my Python project!")
