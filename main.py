@@ -12,8 +12,8 @@ def health_check():
     return {"status": "healthy"}
 
 
-# def add(a, b):
-#     return a + b
+def add(a, b):
+    return a + b
 
 
 # print("Hello from my Python project!")
