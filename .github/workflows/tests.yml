@@ -57,7 +57,7 @@ jobs:
       - name: Deploy on EC2 through SSM
         run: |
           COMMAND_ID=$(aws ssm send-command \
-            --instance-ids "i-09285cef50d44f326" \
+            --instance-ids "i-0bd69ab2a7411d7d7" \
             --document-name "AWS-RunShellScript" \
             --parameters 'commands=[
               "docker pull mhaseeb23/python-venv-practice:latest",
